@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verification of faces</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Verification of faces through images</h1>
+    <form id="uploadForm">
+        <input type="file" id="imageUpload1" accept="image/*">
+        <input type="file" id="imageUpload2" accept="image/*">
+        <button type="submit">Match</button>
+    </form>
+    <div id="resultContainer">
+        <h2>Result</h2>
+        <p id="resultText"></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
